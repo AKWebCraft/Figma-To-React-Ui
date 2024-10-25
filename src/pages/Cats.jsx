@@ -4,11 +4,12 @@ import img1 from "../assets/Rectangle 3.png";
 import img2 from "../assets/Rectangle 4.png";
 import img3 from "../assets/Rectangle 5.png";
 import img4 from "../assets/Rectangle 6.png";
+import BannerImg from "../assets/Banner.png";
 
 const Cats = () => {
   return (
     <div>
-      <Banner />
+      <Banner img={BannerImg} bottom="20%" />
       <div className="flex flex-wrap justify-around mt-10 ms-9 me-9">
         <Card
           img={img1}

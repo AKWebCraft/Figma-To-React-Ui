@@ -1,5 +1,4 @@
 import React from "react";
-import img1 from "../assets/Rectangle 3.png";
 
 const Card = ({ img, title, description }) => {
   return (

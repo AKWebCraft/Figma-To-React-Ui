@@ -4,33 +4,40 @@ import search from "../assets/icons/search.png";
 import instagrm from "../assets/icons/instagram.png";
 import twitter from "../assets/icons/twitter.png";
 import fb from "../assets/icons/facebook.png";
+import Button from "./Button";
 
 const Header = () => {
   return (
     <div className="flex justify-between w-full bg-white p-5">
       <Link to="/">
-        <img src={logo} className="w-[231px] h-[105px] ml-10" alt="logo" />
+        <img src={logo} className="w-[231px] h-[105px] ml-5" alt="logo" />
       </Link>
       <div className="flex items-center">
         <Link to="/support">
-          <button className="text-white bg-[#F37033] rounded-[40px] w-[153px] h-[43px] mr-4">
-            SUPPORT
-          </button>
+          <Button
+            text="SUPPORT"
+            bg="#F37033"
+            radius="40px"
+            width="153px"
+            height="43px"
+            margin="5px"
+          />
         </Link>
         <Link to="/volunteer">
-          <button className="text-white bg-[#FFA835] rounded-[40px] w-[224px] h-[43px] mr-4">
-            BECOME VOLUNTARY
-          </button>
+          <Button
+            text="BECOME VOLUNTARY"
+            bg="#FFA835"
+            radius="40px"
+            width="224px"
+            height="43px"
+            margin="5px"
+          />
         </Link>
         <div className="flex items-center mr-10">
-          <img src={search} className="w-[24px] h-[24px] mr-3" alt="search" />
-          <img
-            src={instagrm}
-            className="w-[24px] h-[24px] mr-3"
-            alt="instagram"
-          />
-          <img src={twitter} className="w-[24px] h-[24px] mr-3" alt="twitter" />
-          <img src={fb} className="w-[24px] h-[24px] mr-3" alt="fb" />
+          <img src={search} className="w-[24] h-[24] mr-3" alt="search" />
+          <img src={instagrm} className="w-[24] h-[24] mr-3" alt="instagram" />
+          <img src={twitter} className="w-[24] h-[24] mr-3" alt="twitter" />
+          <img src={fb} className="w-[24] h-[24] mr-3" alt="fb" />
         </div>
       </div>
     </div>
